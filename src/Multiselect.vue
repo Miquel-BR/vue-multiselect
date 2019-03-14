@@ -82,6 +82,7 @@
       </div>
       <transition name="multiselect">
         <div
+          data-simplebar
           class="multiselect__content-wrapper"
           v-show="isOpen"
           @focus="activate"
@@ -145,6 +146,8 @@
 <script>
 import multiselectMixin from './multiselectMixin'
 import pointerMixin from './pointerMixin'
+import 'simplebar'
+import 'simplebar/dist/simplebar.css'
 
 export default {
   name: 'vue-multiselect',
@@ -632,7 +635,7 @@ fieldset[disabled] .multiselect {
   background: #fff;
   width: 100%;
   max-height: 240px;
-  overflow: auto;
+  /*overflow: auto;*/
   border: 1px solid #e8e8e8;
   border-top: none;
   border-bottom-left-radius: 5px;

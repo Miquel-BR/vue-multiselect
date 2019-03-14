@@ -114,5 +114,8 @@
     "dist",
     "src",
     "index.d.ts"
-  ]
+  ],
+  "dependencies": {
+    "simplebar": "^3.1.3"
+  }
 }
